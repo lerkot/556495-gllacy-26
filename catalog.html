@@ -54,6 +54,55 @@
     <!--Фильтры-->
     <section>
       <h2 class="visually-hidden">Каталог</h2>
+      <div class="filters">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label for="sort">Сортировка:</label>
+          <select id="sort">
+            <option value="1">по популярности</option>
+            <option value="2">сначала недорогие</option>
+            <option value="3">сначала дорогие</option>
+            <option value="4">по жирности</option>
+          </select>
+          <fieldset class="filter-range">
+            <legend class="filter-range-title">Цена: 100 руб. – 500 руб.:</legend>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="100"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="500"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Жирность:</legend>
+            <input type="radio" name="fat" id="low-fat">
+            <label for="low-fat">0%</label>
+            <input type="radio" name="fat" id="middle-fat">
+            <label for="middle-fat">до 10%</label>
+            <input type="radio" name="fat" id="high-fat">
+            <label for="high-fat">до 30%</label>
+            <input type="radio" name="fat" id="extra-high-fat">
+            <label for="extra-high-fat">выше 30%</label>
+          </fieldset>
+          <fieldset>
+            <input type="checkbox" id="choco">
+            <label for="choco">шоколадные</label>
+            <input type="checkbox" id="sugar">
+            <label for=sugar"">сахарные присыпки</label>
+            <input type="checkbox" id="fruits">
+            <label for="fruits">фрукты</label>
+            <input type="checkbox" id="syrops">
+            <label for="syrops">сиропы</label>
+            <input type="checkbox" id="jams">
+            <label for="jams">джемы</label>
+            <button type="submit">Применить</button>
+          </fieldset>
+      </div>
+      </form>
       <div>
         <img src="https://via.placeholder.com/150x100">
         <span>
@@ -164,6 +213,15 @@
       </div>
     </section>
     <!--Пагинатор-->
+    <div>
+      <span><</span>
+      <a href=#>1</a>
+      <a href="">2</a>
+      <a href="">3</a>
+      <a href="">4</a>
+      <a href="">5</a>
+      <a href="">></a>
+    </div>
   </main>
   <footer>
     <div>
