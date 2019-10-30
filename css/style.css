@@ -129,7 +129,7 @@ a {
   margin-bottom: 30px;
   font-size: 60px;
   line-height: 60px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .slide-button {
@@ -194,7 +194,7 @@ a {
 #product-1:checked~.site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/content-images/slide1.png");
-  background-position-y: -9px;
+  background-position-y: 0px;
 }
 
 #product-2:checked~.site-wrapper {
@@ -232,6 +232,7 @@ a {
 /*Хедер*/
 .main-header {
   margin-bottom: -40px;
+  padding-top: 9px
 }
 
 .header-wrapper {
@@ -285,8 +286,8 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: -5px;
-  margin-left: 10px;
+  margin-top: -4px;
+  margin-left: 9px;
   min-width: 349px;
 }
 
@@ -300,7 +301,7 @@ a {
   padding-top: 6px;
   padding-right: 13px;
   padding-bottom: 7px;
-  padding-left: 14px;
+  padding-left: 15px;
   border-radius: 15px;
 }
 
@@ -551,8 +552,8 @@ a {
   padding-right: 10px;
   font-family: inherit;
   color: #323232;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 24px;
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
@@ -625,7 +626,7 @@ a {
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
-  line-height: 14px;
+  line-height: 16px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
 }
@@ -705,8 +706,8 @@ a {
   padding-right: 10px;
   font-family: inherit;
   color: #323232;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 24px;
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
@@ -806,7 +807,7 @@ a {
 .restore,
 .registration {
   color: #323232;
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -907,21 +908,24 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 }
 
 .promo .promo-left {
   width: 560px;
+  min-height: 220px;
   background-image: url("../img/background-images/raspberry.jpg");
   background-color: #ca1240;
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 12px;
+  box-sizing: border-box;
 }
 
 .promo .promo-right {
   width: 560px;
+  min-height: 220px;
   background-image: url("../img/background-images/chocolate.jpg");
   background-color: #7d5a49;
   background-position: 0 0;
@@ -929,6 +933,7 @@ a {
   background-repeat: no-repeat;
   border-radius: 12px;
   z-index: 2;
+  box-sizing: border-box;
 }
 
 .promo .heading {
@@ -946,7 +951,7 @@ a {
   margin: 0;
   padding-left: 19px;
   padding-right: 17px;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
@@ -967,7 +972,7 @@ a {
   -ms-flex-pack: end;
   justify-content: flex-end;
   margin-right: 22px;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .promo a {
@@ -1034,7 +1039,7 @@ a {
 .catalog-item .catalog-image {
   width: 267px;
   height: 267px;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 }
 
 .catalog-item .catalog-link {
@@ -1074,7 +1079,7 @@ a {
 .popular-item::before {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 6px;
   left: 13px;
   width: 61px;
   height: 61px;
@@ -1174,11 +1179,13 @@ a {
 
 /*Оформление блока с инфо о магазине*/
 .info {
-  margin-bottom: 40px;
+  min-height: 306px;
+  margin-bottom: 39px;
   padding: 25px 20px;
+  padding-bottom: 21px;
   color: #323232;
   background-color: #f0e7cc;
-  background-image: url("../img/background-images/waffle.jpg");
+  background-image: url(../img/background-images/waffle.jpg);
   background-position: 0 0;
   background-repeat: repeat;
   border-radius: 15px;
@@ -1208,7 +1215,7 @@ a {
 .info .first::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 8px;
   width: 49px;
   height: 49px;
   background-image: url("../img/icons/ice-cream.svg");
@@ -1219,7 +1226,7 @@ a {
 .info .second::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: 12px;
   width: 49px;
   height: 49px;
@@ -1259,7 +1266,7 @@ a {
 }
 
 .info p {
-  margin: 23px 0 0;
+  margin: 21px 0 0;
   padding-left: 56px;
   padding-right: 10px;
 }
@@ -1282,21 +1289,28 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
   padding: 0;
 }
 
 .preview,
 .subscribe {
   width: 560px;
+  min-height: 220px;
+  box-sizing: border-box;
 }
 
 .preview {
-  padding: 22px 19px;
+  padding-top: 22px;
+  padding-right: 19px;
+  padding-left: 19px;
+  background-color: #ffffff;
   background-image: url("../img/background-images/strawberry.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: 0 0;
   border-radius: 15px;
+  box-sizing: border-box;
 }
 
 .preview p {
@@ -1328,13 +1342,17 @@ a {
 .subscribe {
   padding: 5px;
   background-image: url(../img/background-images/post.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  box-sizing: border-box;
   border-radius: 15px;
 }
 
 .background-container {
   padding-top: 28px;
-  padding-right: 20px;
-  padding-bottom: 36px;
+  padding-right: 18px;
+  padding-bottom: 34px;
   padding-left: 22px;
   background-color: #f8f7f4;
   border-radius: 15px;
@@ -1342,7 +1360,7 @@ a {
 
 .subscribe p {
   margin: 0 auto;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
   color: #5a5a5a;
   font-size: 16px;
   font-weight: 400;
@@ -1370,16 +1388,17 @@ a {
 }
 
 .subscribe button {
+  margin-top: 2px;
   padding-left: 18px;
   padding-right: 19px;
-  padding-top: 11px;
-  padding-bottom: 14px;
+  padding-top: 8px;
+  padding-bottom: 11px;
   text-align: center;
   vertical-align: middle;
   color: #fefefe;
   font-size: 18px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 24px;
   background-color: #ed644c;
 }
 
@@ -1393,17 +1412,19 @@ a {
 }
 
 /*Стилизация карты*/
-.map {
-  position: relative;
-  width: 100%;
-  border: 0;
-  z-index: 1;
-}
-
 .map-area {
   position: relative;
   width: 100%;
   min-height: 430px;
+  margin-bottom: 8px;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border: 0;
+  z-index: 1;
 }
 
 .map-area img {
@@ -1415,25 +1436,22 @@ a {
 }
 
 /*Форма обратной связи*/
-.contacts-full {
-  position: absolute;
-  top: 62px;
-  right: 188px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.contacts-wrapper {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.contacts-full {
   width: 302px;
+  min-height: 305px;
+  margin-top: 64px;
   padding: 27px;
-  z-index: 2;
+  padding-left: 25px;
+  padding-right: 25px;
   color: #323232;
   background-color: #ffffff;
   border-radius: 15px;
+  z-index: 3;
 }
 
 .contacts-full p {
@@ -1454,35 +1472,45 @@ a {
   line-height: 24px;
 }
 
-.contacts-full .simple-text:first-child {
+.contacts-full a.bold-text {
   margin-bottom: 2px;
-  margin-right: 91px;
+  color: #323232;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.contacts-full .simple-text:first-child {
+  margin-bottom: 1px;
+  margin-right: 94px;
 }
 
 .contacts-full p:nth-child(2) {
   margin-bottom: 18px;
 }
 
-.contacts-full p:nth-child(3),
-.contacts-full p:nth-child(4) {
-  margin-bottom: 3px;
+.contacts-full p:nth-child(3) {
+  margin-bottom: 6px;
 }
 
-.contacts-full p:nth-child(5) {
-  margin-bottom: 25px;
+.contacts-full p:last-of-type {
+  margin-bottom: 24px;
 }
 
 .contacts-btn {
-  position: relative;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  margin-bottom: 6px;
-  color: #fefefe;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
+position: relative;
+text-align: center;
+vertical-align: middle;
+padding-top: 8px;
+padding-right: 27px;
+padding-bottom: 10px;
+padding-left: 28px;
+margin-bottom: 6px;
+color: #fefefe;
+font-size: 18px;
+font-weight: 700;
+line-height: 24px;
 }
 
 /*Модальное окно обратной связи*/
@@ -1539,7 +1567,6 @@ a {
   z-index: 4;
 }
 */
-
 .modal {
   position: fixed;
   background-color: #f8f7f4;
@@ -1874,7 +1901,7 @@ a {
 .menu-list a:focus,
 .menu-list a:active {
   color: #ffbc9e;
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1892,7 +1919,7 @@ a {
 .menu-list .bold:focus,
 .menu-list .bold:active {
   color: #ffbc9e;
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 13px;
   font-weight: 700;
   line-height: 18px;
@@ -1931,7 +1958,7 @@ a {
 .footer-copyright p {
   margin: 0;
   color: #ffffff;
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -1953,7 +1980,7 @@ a {
 .footer-copyright a:focus,
 .footer-copyright a:active {
   color: #ffbc9e;
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   border-bottom: 1px solid rgba(255, 188, 157, 0.3);
 }
 
@@ -1984,7 +2011,7 @@ a {
 
 .main-menu .current {
   color: #ffffff;
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
