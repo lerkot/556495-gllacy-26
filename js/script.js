@@ -5,7 +5,7 @@ var name = popup.querySelector("[name=username]");
 var email = popup.querySelector("[name=email]");
 var comment = popup.querySelector("[name=comment]");
 var form = popup.querySelector(".feedback-form");
-var sendComment = popup.querySelector(".btn-send");
+
 
 var isStorageSupport = true;
 var storage = "";
@@ -24,7 +24,6 @@ feedback.addEventListener("click", function(evt) {
 
   if (storage) {
     username.value = storage;
-    email.value = storage;
     email.focus();
   } else {
     username.focus();
@@ -41,8 +40,8 @@ form.addEventListener("submit", function(evt) {
   if (!username.value || !email.value || !comment.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
-    popup.offsetWidth = popup.offsetWidth;
-    popup.classList.add("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("username", username.value);
